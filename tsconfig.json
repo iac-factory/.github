@@ -1,16 +1,8 @@
 {
     "extends": "@tsconfig/esm",
-    "ts-node": {
-        "swc": false,
-        "transpileOnly": true,
-        "emit": false,
-        "files": true,
-        "experimentalReplAwait": false,
-        "preferTsExts": true,
-        "esm": true
-    },
     "compilerOptions": {
         "lib": [
+            "DOM",
             "ES2017",
             "ES2018",
             "ESNext"

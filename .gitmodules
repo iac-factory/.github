@@ -1,0 +1,3 @@
+[submodule "ts-esm-standard"]
+	path = ts-esm-standard
+	url = https://github.com/iac-factory/ts-esm-standard.git

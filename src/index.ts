@@ -1,15 +1,10 @@
 const Main = async () => {
-    const duration = 5000;
-    const $ = async () => await new Promise(async (resolve) => {
-        process.stdout.write("Awaiting ..." + "\n");
-        await setTimeout[Object.getOwnPropertySymbols(setTimeout)[0]](duration);
+    const Framework = await import("octokit");
+    const Middleware = Framework.createNodeMiddleware;
 
-        resolve(true);
-    });
+    const Settings = await import("./settings");
 
-    await $();
-
-    process.stdout.write("  - Complete :D" + "\n");
+    console.log(Settings);
 };
 
 (async () => await Main())();

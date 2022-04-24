@@ -5,7 +5,7 @@
     "main": "index.js",
     "module": "main.js",
     "scripts": {
-        "start": "ts-node .",
+        "start": "node distribution",
         "prestart": "npm run compile",
         "build": "tsc --build tsconfig.json",
         "common": "tsc --build tsconfig.cjs.json",
@@ -15,10 +15,11 @@
     "author": "Jacob B. Sanders <jacob.sanders@cloudhybrid.io> (https://github.com/iac-factory)",
     "license": "BSD-2-Clause",
     "dependencies": {
-        "esm": "latest"
+        "dotenv": "^16.0.0",
+        "esm": "latest",
+        "octokit": "^1.7.1"
     },
     "devDependencies": {
-        "ts-node": "latest",
         "typescript": "latest"
     },
     "esm": {

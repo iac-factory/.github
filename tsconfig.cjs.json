@@ -1,9 +1,5 @@
 {
     "extends": "./tsconfig.json",
-    "ts-node": {
-        "experimentalReplAwait": false,
-        "esm": false
-    },
     "compilerOptions": {
         "target": "ES3",
         "outDir": "distribution/common-js" ,
