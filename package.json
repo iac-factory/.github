@@ -6,7 +6,7 @@
     "module": "main.js",
     "scripts": {
         "start": "node distribution",
-        "prestart": "npm run compile",
+        "prestart": "npm run build",
         "build": "tsc --build tsconfig.json",
         "common": "tsc --build tsconfig.cjs.json",
         "ecma": "tsc --build tsconfig.esm.json",

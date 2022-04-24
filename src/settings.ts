@@ -1,15 +1,11 @@
 const Main = async () => {
     const Dot = await import("dotenv");
 
-    const Configuration = Dot.config({
-        debug: true,
+    return Dot.config({
+        debug: false,
         encoding: "utf-8",
         override: true
     });
-
-    console.debug(Configuration.parsed);
-
-    return Configuration;
 }
 
 export { Main as Configuration };

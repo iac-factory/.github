@@ -32,5 +32,5 @@
         "allowSyntheticDefaultImports": true,
         "assumeChangesOnlyAffectDirectDependencies": false
     }, "include": [".esmrc.json", "**/*.json", "**/*.ts"],
-    "exclude": ["**/globals.*", "distribution"]
+    "exclude": ["**/globals.*", "distribution", "ts-esm-standard", "**/*.archive.*"]
 }

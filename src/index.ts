@@ -1,14 +1,9 @@
-const Main = async () => {
-    const Framework = await import("octokit");
-    const Middleware = Framework.createNodeMiddleware;
+export * from "./gists";
+export * from "./organization";
+export * from "./members";
 
-    const Settings = await import("./settings");
+export * as Repository from "./repository";
 
-    console.log(Settings);
-};
+import * as Repository from "./repository";
 
-(async () => await Main())();
-
-export default Main;
-
-export { Main };
+(async () => console.log(await Repository.All()))();
